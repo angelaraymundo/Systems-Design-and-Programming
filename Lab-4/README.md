@@ -12,4 +12,6 @@ This lab demonstrates how to integrate C into x86-64 Assembly. A C wrapper reads
 1. Run the following command in the terminal: 
    ```bash
    gcc -no-pie sum.s main.c -o lab4
-2. Run using ./lab4 data.txt
+2. Run using
+   ```bash
+   ./lab4 data.txt
