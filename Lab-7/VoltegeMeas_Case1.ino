@@ -16,7 +16,7 @@ void setup() {
 void loop() {
   int VoltageMsmt = analogRead(voltageV);
   float Vcalc = (5.0 / 1023) * VoltageMsmt;
-  Vcalc = Vcalc * 2.0;   // theoretical (10k+10k)/10k; replace with your calibrated value
+  Vcalc = Vcalc * 2.0;   // theoretical (10k+10k)/10k;
 
   lcd.setCursor(0, 0);
   lcd.print("BATT ");
