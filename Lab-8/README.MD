@@ -1,4 +1,4 @@
-# CMPE-310 Lab 9: Continuity Detector and DC Voltage Meter
+# CMPE-310 Lab 8: Continuity Detector and DC Voltage Meter
 
 ## Overview
 This project transforms an Arduino UNO into a dual-function electrical testing tool. It consists of two main tasks:
