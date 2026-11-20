@@ -32,10 +32,13 @@ This project programs an Intel 8255 Programmable Peripheral Interface (82C55) fr
 | H | b, c, e, f, g | `0x76` |
 | E | a, d, e, f, g | `0x79` |
  
+## Files
+ 
+* `lab9.s` - 8086 GAS assembly source (8255 setup, display multiplexing, and scrolling of "SHE")
 ## How to Use
  
 1. **Assemble:** `as -o lab9.o lab9.s`
-2. **Inspect (optional):** `objdump -d -M i8086 lab9.o` to view the generated machine code
+2. **Inspect (optional):** `objdump -d -M i8086 lab9.o` to view the generated machine code; the first instructions show `mov $0x80,%al` (control word) and `mov $0x643,%dx` (control register)
 3. **Run:** Load the program on an 8086 system or simulator with the display at `0x640`. The word "SHE" appears at the right side of the display, scrolls left until "S" reaches dig-7, then scrolls back right until "E" reaches dig-0, and repeats
 The program uses `out` instructions to access I/O ports and 16-bit code, so it cannot be executed as a normal Linux program; assembling it only checks the syntax.
  
